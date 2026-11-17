@@ -5,8 +5,8 @@
 //
 // The same bytes on every run: nothing reads a clock or the network. The pictures (render.mjs)
 // are made separately, once, and committed. The voice notes are given as text, as said: the
-// course ships no audio, because no synthetic voice at hand had terms that clearly allow
-// publishing its output, and no person was recorded.
+// course ships no audio. A first version spoke them with a Windows built-in voice, whose terms
+// do not clearly allow publishing its output; it was removed, and no licensed voice was sought.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

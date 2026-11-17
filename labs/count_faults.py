@@ -9,6 +9,7 @@ number inside any 90-day window, and whether that makes the fault a recurring on
     uv run labs/count_faults.py --file labs/files/runs/mikshaf_coding.csv --column mikshaf_code
     uv run labs/count_faults.py --asset P-101B --code SEAL --rows
 
+PM and OTH are not faults and are left out of the table; name one with --code to list it.
 The counts come from the rows, so every number can be traced: --rows prints the work orders
 behind one number. The script reads a file and prints; it writes nothing and calls no model.
 """
@@ -60,7 +61,7 @@ def main() -> None:
     groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for r in rows:
         code = r[a.column].strip().upper()
-        if code in NOT_FAULTS or not code:
+        if not code or (code in NOT_FAULTS and not a.code):
             continue
         if a.asset and r["asset"] != a.asset:
             continue

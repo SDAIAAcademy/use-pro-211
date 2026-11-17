@@ -161,6 +161,10 @@ const ASSET_OF = {
   BLK: PUMPS, SEAL: PUMPS, BRG: PUMPS, OVH: PUMPS, ELEC: ['VFD-101A', 'VFD-101B', 'VFD-101C', 'P-101A', 'P-101C'],
   INST: ['LT-101', 'PT-110', 'FT-120', 'AT-130'], VLV: ['NRV-103A', 'NRV-103B', 'NRV-103C', 'HV-112A'], PM: [...PUMPS, 'LT-101', 'FAN-140', 'VFD-101B'], OTH: ['PS-07', 'FAN-140', 'SC-100']
 };
+const FITS = {
+  'LT-101': /مستوى|level/, 'PT-110': /الضغط/, 'FT-120': /flow/, 'AT-130': /الغاز/,
+  'NRV-103A': /عدم الرجوع|NRV/, 'NRV-103B': /عدم الرجوع|NRV/, 'NRV-103C': /عدم الرجوع|NRV/, 'HV-112A': /صمام الطرد|isolation/
+};
 const DAY0 = Date.UTC(2024, 9, 1); // the log covers 1 October 2024 to 30 September 2026: 730 days
 const iso = d => new Date(DAY0 + d * 86400000).toISOString().slice(0, 10);
 
@@ -171,6 +175,8 @@ export function buildLog() {
   const add = (day, asset, code, trapOnly) => {
     let vs = V[code];
     if (trapOnly === true) vs = vs.filter(v => v[1]); else if (trapOnly === false) vs = vs.filter(v => !v[1]);
+    // instruments and valves: the text names what that asset is (a level transmitter is not a gas detector)
+    if ((code === 'INST' || code === 'VLV') && FITS[asset]) vs = vs.filter(v => FITS[asset].test(v[0]));
     const v = pick(vs);
     const down = code === 'PM' || code === 'OTH' ? 0 : [2, 3, 4, 4, 6, 8, 12][Math.floor(r() * 7)];
     rows.push({ day, asset, code, text: v[0], bot: v[1] || code, down });
