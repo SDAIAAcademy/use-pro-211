@@ -5,7 +5,7 @@ AI for Engineers and Field Operations
 
 مسار الطلاقة في البيانات والذكاء الاصطناعي · أكاديمية سدايا · USE-PRO-211 · المستوى 200
 
-REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك فعله بعد المقرر
+تستعين بالمساعد في الإجراءات والسجلات وصور الفحص والملاحظات الصوتية، وتتحقق من كل قيمة ووحدة وخطوة قبل أن تصل إلى المعدات
 
 يستخدم المهندسون والفنيون الذكاء الاصطناعي في وثائق محطة ضخ اصطناعية واحدة، من الأدلة التشغيلية والإجراءات والسجلات إلى صور الفحص ومخطط الأنابيب والأجهزة، ويتحققون من كل مخرج قبل أن يصل إلى المعدات. أما الاستراتيجية القطاعية فيغطيها المقرر USE-SEC-209.
 
@@ -29,8 +29,9 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | الوحدة | العنوان | الجلسات | الشرائح |
 |---|---|---|---|
-| اليوم 1 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day1.html`](slides/day1.html) |
-| اليوم 2 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day2.html`](slides/day2.html) |
+| اليوم 1 | الحدود والإجراءات | حدود السلامة والبيانات: أين يقف المساعد; الأدلة التشغيلية والإجراءات: الخطوة والقيمة والوحدة | [`slides/day1.html`](slides/day1.html) |
+| اليوم 2 | السجلات والصور | سجلات الصيانة: ترميز بالمساعد وأعداد من الكود; الصور والرسومات والملاحظات الصوتية | [`slides/day2.html`](slides/day2.html) |
+| المشروع الختامي | بطاقة إعادة التصميم والمراجعة المباشرة |  | [`slides/capstone.html`](slides/capstone.html) |
 <!-- /academy:units -->
 
 ## دراسة الحالة
@@ -44,14 +45,10 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | | الجلسة | المختبر | الملف |
 |---|---|---|---|
-| 1.1 | اليوم 1 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 1.1 | [`D1_1.html`](labs/D1_1.html) |
-| 1.2 | اليوم 1 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 1.2 | [`D1_2.html`](labs/D1_2.html) |
-| 1.3 | اليوم 1 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 1.3 | [`D1_3.html`](labs/D1_3.html) |
-| 1.4 | اليوم 1 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 1.4 | [`D1_4.html`](labs/D1_4.html) |
-| 2.1 | اليوم 2 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 2.1 | [`D2_1.html`](labs/D2_1.html) |
-| 2.2 | اليوم 2 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 2.2 | [`D2_2.html`](labs/D2_2.html) |
-| 2.3 | اليوم 2 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 2.3 | [`D2_3.html`](labs/D2_3.html) |
-| 2.4 | اليوم 2 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 2.4 | [`D2_4.html`](labs/D2_4.html) |
+| 1.1 | اليوم 1 · الجلسة 1 | مستويات المخاطر لاثني عشر استخدامًا | [`D1_1_risk_tiers.html`](labs/D1_1_risk_tiers.html) |
+| 1.2 | اليوم 1 · الجلسة 2 | تأشير التعديلات على إجراء المضخة P-101B | [`D1_2_redline_procedure.html`](labs/D1_2_redline_procedure.html) |
+| 2.1 | اليوم 2 · الجلسة 1 | جدول الأعطال المتكررة من سجلات عامين | [`D2_1_count_faults.html`](labs/D2_1_count_faults.html) |
+| 2.2 | اليوم 2 · الجلسة 2 | جدول القراءات الخاطئة وقاعدة القراءة | [`D2_2_image_misreads.html`](labs/D2_2_image_misreads.html) |
 <!-- /academy:labs -->
 
 ## المتطلبات السابقة
@@ -72,7 +69,27 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 <!-- academy:sources -->
 ## المصادر
 
-- REPLACE: كل مصدر يستشهد به المقرر مع عنوانه، في course.json ضمن "sources"؛ هذه القائمة تُكتب من هناك
+### المراجع الوطنية
+
+- [ضوابط الأمن السيبراني للأنظمة التشغيلية OTCC-1:2022 (الهيئة الوطنية للأمن السيبراني)](https://nca.gov.sa/en/regulatory-documents/controls-list/otcc/)
+- [سياسة تصنيف البيانات (مكتب إدارة البيانات الوطنية)](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf)
+- [مبادئ أخلاقيات الذكاء الاصطناعي (سدايا)](https://sdaia.gov.sa/ar/SDAIA/about/Documents/ai-principles.pdf)
+- [صفحة الأنظمة والسياسات في موقع سدايا](https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)
+
+### قراءة الصور والتفريغ الصوتي: ما قيس
+
+- [Lin et al.: Do Vision-Language Models Measure Up? Benchmarking Visual Measurement Reading with MeasureBench (2026)](https://arxiv.org/abs/2510.26865)
+- [Koenecke et al.: Careless Whisper: Speech-to-Text Hallucination Harms (2024)](https://arxiv.org/abs/2402.08021)
+
+### تصاريح العمل وإدارة التغيير
+
+- [Health and Safety Executive (UK): Human factors: Permit to work systems](https://www.hse.gov.uk/humanfactors/topics/ptw.htm)
+- [Health and Safety Executive (UK): Plant modification / Change procedures](https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm)
+
+### الأدوات
+
+- [Open WebUI: Knowledge](https://docs.openwebui.com/features/workspace/knowledge/)
+- [Whisper (OpenAI): المستودع](https://github.com/openai/whisper)
 <!-- /academy:sources -->
 
 ### المرجعيات الوطنية
