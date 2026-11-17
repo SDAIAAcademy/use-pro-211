@@ -1,37 +1,89 @@
 <article class="lab" data-lab="2.1">
-  <div class="box goal">
-    <h3>الهدف</h3>
-    <p>REPLACE: في النهاية يستطيع المشاركون …</p>
-  </div>
-
-  <h2>ما تحتاجه</h2>
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
   <ul>
-    <li>REPLACE: الملفات والأداة والحساب التي يستخدمها المختبر</li>
+    <li>عينة من 50 مدخلًا رمّزتها بيدك وقارنتها بترميز «مِكشاف»، مع أنماط الخطأ التي ظهرت فيها.</li>
+    <li>جدول أعطال متكررة محسوب بالصيغ أو بالسكربت، كل رقم فيه يُتتبَّع إلى أوامر العمل التي وراءه. هذا دليل الناتج الثالث.</li>
   </ul>
+</div>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الأولى <span class="min">15 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-    <div class="prompt" data-tool="مساعد مستند إلى المصادر">REPLACE: الأمر الذي ينسخه المشاركون، والأجزاء التي يغيّرونها <span class="ph">ملوّنة</span></div>
-  </div>
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/logs/maintenance_log.csv" download><b>maintenance_log.csv</b><span>سجل الصيانة لعامين: 253 أمر عمل بنص حر، بالعربية والإنجليزية ولغة الورشة.</span></a>
+  <a href="files/logs/codebook.html" target="_blank"><b>codebook.html</b><span>دليل الترميز: تسعة رموز، وقواعدها، وتعريف العطل المتكرر.</span></a>
+  <a href="files/runs/mikshaf_coding.csv" download><b>mikshaf_coding.csv</b><span>جلسة مسجلة: السجل نفسه وفي آخره عمود <span class="en">mikshaf_code</span>، ترميز «مِكشاف».</span></a>
+  <a href="files/start/sample_50.csv" download><b>sample_50.csv</b><span>العينة الثابتة: 50 مدخلًا سُحبت بمولّد عشوائي ببذرة ثابتة، وعمودان فارغان لك.</span></a>
+  <a href="files/runs/mikshaf_counts_chat.html" target="_blank"><b>mikshaf_counts_chat.html</b><span>جلسة مسجلة: سُئل المساعد عن الأعداد في المحادثة مرتين.</span></a>
+  <a href="count_faults.py" download><b>count_faults.py</b><span>سكربت العدّ: ملف واحد بلا اعتماديات، يقرأ ملفًا ويطبع، ولا يتصل بأي نموذج.</span></a>
+  <a href="files/start/fault_table.csv" download><b>fault_table.csv</b><span>جدول الأعطال المتكررة: الأعمدة جاهزة.</span></a>
+</div>
+<div class="callout note"><b>استخدام الذكاء الاصطناعي في هذا المختبر: كامل.</b> الترميز من المساعد مقبول بعد التحقق منه على العينة. أما الأعداد فلا تُسأل للمساعد: تحسبها الصيغ أو السكربت من الصفوف. سجلات الصيانة مقيدة: أعلى أداة لها المساعد المعتمد.</div>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الثانية <span class="min">10 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-  </div>
+<h2>الخطوات</h2>
 
-  <div class="step stretch">
-    <h3>✱ إضافي</h3>
-    <p>REPLACE: توسعة لمن ينهي مبكرًا</p>
-  </div>
+<div class="step">
+  <h3>1 · قرار التعامل، ثم السجل ودليل الترميز <span class="min">5 دقائق</span></h3>
+  <p>ما مستوى سجل الصيانة؟ وأي أداة يدخلها؟ ثم اقرأ دليل الترميز كله، وخاصة قواعده الأربع: الرمز للعطل الذي وقع لا للكلمة التي وردت، والفرق بين <span class="en">ELEC</span> و<span class="en">OVH</span>، ولغة الورشة، وتعريف العطل المتكرر.</p>
+</div>
 
-  <h2>أسئلة تحقق</h2>
-  <ol class="checks">
-    <li>REPLACE: سؤال يبيّن أن المختبر نجح</li>
-  </ol>
+<div class="step">
+  <h3>2 · رمّز عشرة مدخلات بيدك <span class="min">8 دقائق</span></h3>
+  <p>افتح <span class="en">sample_50.csv</span> في برنامج الجداول، وأخفِ عمود <span class="en">mikshaf_code</span> قبل أن تقرأ. رمّز المدخلات العشرة الأولى في عمود <span class="en">my_code</span> بدليل الترميز وحده. الهدف أن يكون حكمك قبل أن ترى حكم المساعد.</p>
+</div>
 
-  <details class="instructor">
-    <summary>للمدرّب</summary>
-    <p>REPLACE: مفتاح الإجابة والفخاخ والأخطاء الشائعة</p>
-  </details>
+<div class="step">
+  <h3>3 · تحقق من ترميز المساعد على العينة <span class="min">15 دقيقة</span></h3>
+  <p>أكمل الخمسين، ثم أظهر عمود <span class="en">mikshaf_code</span>، واكتب في عمود <span class="en">agree</span> «نعم» أو «لا». كم اتفاقًا من خمسين؟ ثم صنّف كل خلاف: أي رمز كتبه المساعد، وأي رمز الصحيح، ولماذا. كل نمط تجده في العينة له أخوات في بقية السجل.</p>
+  <div class="prompt" data-tool="مساعد معتمد">رمّز كل أمر عمل في الملف المرفق برمز واحد من دليل الترميز المرفق. <span class="seg c-teal">الرمز للعطل الذي وقع، لا للكلمة التي وردت.</span> <span class="seg c-amber">اكتب بجانب كل رمز الكلمات التي بنيت عليها حكمك.</span> <span class="seg c-coral">ولا تحسب أي عدد.</span></div>
+  <p class="small">من عنده مساعد معتمد يجرب هذا الطلب على العينة ويقارن ترميزه بالترميز المسجل. ومن ليس عنده يعمل بالترميز المسجل.</p>
+</div>
+
+<div class="step">
+  <h3>4 · احسب الأعداد من الصفوف <span class="min">12 دقيقة</span></h3>
+  <p>احسب أولًا من ترميز المساعد كما هو، ثم صحّحه بالأنماط التي وجدتها في الخطوة 3 وأعد الحساب. طريقان، والنتيجة واحدة:</p>
+  <ul>
+    <li><b>بالجداول:</b> أضف إلى <span class="en">mikshaf_coding.csv</span> عمود <span class="en">my_code</span> ينسخ رمز المساعد. صفِّ النص بكلمات كل نمط (مثل «لا يوجد» و<span class="en">no</span>، و«بيرنق» و«رمان بلي»، و«الحماية الحرارية» و<span class="en">thermal</span>) وصحّح الرمز صفًّا صفًّا بعد أن تقرأه. ثم <span class="en">COUNTIFS</span> أو جدول محوري على المعدة والرمز.</li>
+    <li><b>بالسكربت:</b> ضع <span class="en">count_faults.py</span> والملف في مجلد واحد. الأمر الأول يطبع الجدول، والثاني يطبع الصفوف وراء رقم واحد لتقرأها، والثالث يعدّ عمود تصحيحك.</li>
+  </ul>
+  <pre class="code" data-file="terminal"><code class="language-bash">uv run count_faults.py --file mikshaf_coding.csv
+uv run count_faults.py --file mikshaf_coding.csv --asset P-101B --code SEAL --rows
+uv run count_faults.py --file my_coding.csv --column my_code</code></pre>
+  <p>العطل المصنف خطأً في رمز آخر لا يظهر في صفوف رمزه. إن أظهرت العينة عطلًا رُمّز <span class="en">OTH</span> فاطلب صفوف <span class="en">OTH</span> للمعدة نفسها: <span class="en">--code OTH --rows</span>.</p>
+</div>
+
+<div class="step">
+  <h3>5 · قارن بما قاله المساعد في المحادثة <span class="min">7 دقائق</span></h3>
+  <p>افتح جلسة الأعداد المسجلة. للأعطال الأربعة فيها: عددك، وجواب الجلسة الأولى، وجواب الثانية. أي الجوابين صحيح؟ وهل يمكن أن تعرف ذلك دون أن تحسب بنفسك؟</p>
+</div>
+
+<div class="step">
+  <h3>6 · جدول الأعطال المتكررة وملاحظة الثقة <span class="min">8 دقائق</span></h3>
+  <p>املأ <span class="en">fault_table.csv</span>: لكل معدة ورمز عددها، وأكبر عدد في أي 90 يومًا، وهل هو متكرر، ومن قرأ الصفوف. ابدأ بالأربعة التي في جلسة المحادثة، ثم أضف كل ما يسميه السكربت متكررًا. واكتب تحت الجدول ملاحظة ثقة من ثلاثة أسطر: نسبة الاتفاق في العينة، والأنماط التي صحّحتها، وما لم تفحصه.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي: قاعدة واحدة في دليل الترميز</h3>
+  <p>اكتب قاعدة واحدة تُضاف إلى دليل الترميز وتمنع أكبر نمط خطأ وجدته، مع مثالين من السجل. أعطها للمساعد مع الدليل، أو طبّقها بيدك على الصفوف، وأعد الحساب: كم رقمًا في جدولك تغيّر؟</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم اتفاقًا من خمسين في العينة؟ وكم نمطًا من الخطأ وجدت؟</li>
+  <li>عدد تسرب مانع التسرب في <span class="en">P-101B</span> من ترميز المساعد، وبعد تصحيحك: ما الفرق، ومن أي نمط جاء؟</li>
+  <li>أي عطل متكرر لا يظهر حين تطلب صفوف رمزه، ويظهر حين تطلب صفوف <span class="en">OTH</span>؟</li>
+  <li>جوابا المحادثة عن العطل نفسه: هل اتفقا؟ وهل كان أحدهما عددك؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرب</summary>
+  <ul>
+    <li>الحل المرجعي: <code>labs/solutions/D2_1_count_faults.md</code>، والجدول في <code>labs/solutions/reference/D2_1_fault_table.csv</code> (عمود <code>count</code> هو ما يطابقه جدول المشارك). التحقق بالكود: <code>node labs/solutions/check.mjs 2.1</code>.</li>
+    <li>السجل 253 أمر عمل، ترميز المساعد أخطأ في 31 منها (12%). أربعة أنماط: فحص دوري فيه «لا يوجد تسرب» رُمّز <code>SEAL</code> (12)، و«لا يوجد اهتزاز» رُمّز <code>BRG</code> (10)، ومحامل بلغة الورشة رُمّزت <code>OTH</code> (5)، وفصل الحماية الحرارية رُمّز <code>OVH</code> (4).</li>
+    <li>العينة: 45 اتفاقًا من 50، والخلافات الخمسة <code>WO-0004</code> و<code>WO-0024</code> و<code>WO-0212</code> و<code>WO-0231</code> و<code>WO-0235</code>، والأنماط الأربعة كلها فيها. 90% في العينة لا تعني أن الأعداد صحيحة بنسبة 90%: الأخطاء تتجمع في معدات بعينها.</li>
+    <li>الأعطال الأربعة: <code>P-101B SEAL</code> 9 (ترميز المساعد 15: ستة فحوص دورية)، و<code>P-101C BLK</code> 14 (مطابق)، و<code>P-101A BRG</code> 7 (ترميز المساعد 4: أربعة في <code>OTH</code> وفحص دوري واحد في <code>BRG</code>)، و<code>LT-101 INST</code> 8، وليس متكررًا: أكبر عدد في 90 يومًا اثنان.</li>
+    <li>المحادثة: الجلسة الأولى 12 و11 و3 و9، والثانية 8 و15 و4 و6. لا جواب منهما يطابق العدد الصحيح في الأربعة، والمساعد ختم كل جلسة بأن الأرقام دقيقة.</li>
+    <li>من ليس على جهازه <code>uv</code> يكمل بالجداول. ومن تأخر في الخطوة 3 يأخذ الخلافات الخمسة من المدرب ويكمل من الخطوة 4.</li>
+    <li>الترميز والمحادثة نصوص مسجلة كتبها مؤلف المقرر: لم يُشغَّل المختبر على نموذج. السكربت والعدّ يُشغَّلان فعلًا.</li>
+  </ul>
+</details>
 </article>
