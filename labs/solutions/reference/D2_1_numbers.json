@@ -1,0 +1,329 @@
+{
+  "entries": 253,
+  "miscoded": 31,
+  "patterns": {
+    "ELEC>OVH": 4,
+    "PM>BRG": 10,
+    "PM>SEAL": 12,
+    "BRG>OTH": 5
+  },
+  "sample_seed": 4,
+  "sample_size": 50,
+  "sample_disagreements": [
+    "WO-0004",
+    "WO-0024",
+    "WO-0212",
+    "WO-0231",
+    "WO-0235"
+  ],
+  "true_counts": {
+    "P-101C|BLK": [
+      14,
+      7,
+      true
+    ],
+    "P-101B|SEAL": [
+      9,
+      4,
+      true
+    ],
+    "LT-101|INST": [
+      8,
+      2,
+      false
+    ],
+    "P-101B|BLK": [
+      8,
+      3,
+      true
+    ],
+    "PT-110|INST": [
+      8,
+      2,
+      false
+    ],
+    "VFD-101C|ELEC": [
+      8,
+      3,
+      true
+    ],
+    "NRV-103A|VLV": [
+      7,
+      3,
+      true
+    ],
+    "P-101A|BRG": [
+      7,
+      4,
+      true
+    ],
+    "P-101A|ELEC": [
+      6,
+      2,
+      false
+    ],
+    "VFD-101A|ELEC": [
+      6,
+      3,
+      true
+    ],
+    "P-101C|BRG": [
+      5,
+      4,
+      true
+    ],
+    "VFD-101B|ELEC": [
+      5,
+      2,
+      false
+    ],
+    "HV-112A|VLV": [
+      4,
+      2,
+      false
+    ],
+    "NRV-103C|VLV": [
+      4,
+      3,
+      true
+    ],
+    "P-101B|OVH": [
+      4,
+      2,
+      false
+    ],
+    "AT-130|INST": [
+      3,
+      1,
+      false
+    ],
+    "FT-120|INST": [
+      3,
+      2,
+      false
+    ],
+    "P-101A|SEAL": [
+      3,
+      2,
+      false
+    ],
+    "P-101C|OVH": [
+      2,
+      1,
+      false
+    ],
+    "P-101C|SEAL": [
+      2,
+      1,
+      false
+    ],
+    "NRV-103B|VLV": [
+      1,
+      1,
+      false
+    ],
+    "P-101A|BLK": [
+      1,
+      1,
+      false
+    ],
+    "P-101A|OVH": [
+      1,
+      1,
+      false
+    ],
+    "P-101B|BRG": [
+      1,
+      1,
+      false
+    ],
+    "P-101C|ELEC": [
+      1,
+      1,
+      false
+    ]
+  },
+  "mikshaf_counts": {
+    "P-101B|SEAL": [
+      15,
+      5,
+      true
+    ],
+    "P-101C|BLK": [
+      14,
+      7,
+      true
+    ],
+    "LT-101|INST": [
+      8,
+      2,
+      false
+    ],
+    "P-101B|BLK": [
+      8,
+      3,
+      true
+    ],
+    "P-101B|BRG": [
+      8,
+      2,
+      false
+    ],
+    "PT-110|INST": [
+      8,
+      2,
+      false
+    ],
+    "NRV-103A|VLV": [
+      7,
+      3,
+      true
+    ],
+    "VFD-101C|ELEC": [
+      7,
+      3,
+      true
+    ],
+    "P-101A|ELEC": [
+      5,
+      2,
+      false
+    ],
+    "VFD-101A|ELEC": [
+      5,
+      2,
+      false
+    ],
+    "HV-112A|VLV": [
+      4,
+      2,
+      false
+    ],
+    "NRV-103C|VLV": [
+      4,
+      3,
+      true
+    ],
+    "P-101A|BRG": [
+      4,
+      2,
+      false
+    ],
+    "P-101A|SEAL": [
+      4,
+      2,
+      false
+    ],
+    "P-101B|OVH": [
+      4,
+      2,
+      false
+    ],
+    "P-101C|BRG": [
+      4,
+      3,
+      true
+    ],
+    "VFD-101B|ELEC": [
+      4,
+      2,
+      false
+    ],
+    "AT-130|INST": [
+      3,
+      1,
+      false
+    ],
+    "FT-120|INST": [
+      3,
+      2,
+      false
+    ],
+    "P-101C|SEAL": [
+      3,
+      1,
+      false
+    ],
+    "LT-101|SEAL": [
+      2,
+      2,
+      false
+    ],
+    "P-101A|OVH": [
+      2,
+      1,
+      false
+    ],
+    "P-101C|OVH": [
+      2,
+      1,
+      false
+    ],
+    "FAN-140|BRG": [
+      1,
+      1,
+      false
+    ],
+    "FAN-140|SEAL": [
+      1,
+      1,
+      false
+    ],
+    "LT-101|BRG": [
+      1,
+      1,
+      false
+    ],
+    "NRV-103B|VLV": [
+      1,
+      1,
+      false
+    ],
+    "P-101A|BLK": [
+      1,
+      1,
+      false
+    ],
+    "P-101C|ELEC": [
+      1,
+      1,
+      false
+    ],
+    "VFD-101A|OVH": [
+      1,
+      1,
+      false
+    ],
+    "VFD-101B|OVH": [
+      1,
+      1,
+      false
+    ],
+    "VFD-101B|SEAL": [
+      1,
+      1,
+      false
+    ],
+    "VFD-101C|OVH": [
+      1,
+      1,
+      false
+    ]
+  },
+  "chat": [
+    {
+      "run": 1,
+      "P-101B|SEAL": 12,
+      "P-101C|BLK": 11,
+      "P-101A|BRG": 3,
+      "LT-101|INST": 9
+    },
+    {
+      "run": 2,
+      "P-101B|SEAL": 8,
+      "P-101C|BLK": 15,
+      "P-101A|BRG": 4,
+      "LT-101|INST": 6
+    }
+  ]
+}

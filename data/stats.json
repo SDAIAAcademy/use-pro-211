@@ -1,0 +1,526 @@
+{
+  "v": 1,
+  "engine": "1.0.0",
+  "build": {
+    "at": "2026-11-17T20:09:33Z",
+    "version": "2027.1.0",
+    "commit": "1d799bc"
+  },
+  "lang": "ar",
+  "dir": "rtl",
+  "totals": {
+    "decks": 3,
+    "slides": 78,
+    "words": 5666,
+    "notes": 74,
+    "notes_ratio": 0.95,
+    "activities": 5,
+    "styles": 9,
+    "slide_minutes": null,
+    "components": {
+      "cards": 43,
+      "pills": 0,
+      "callouts": 62,
+      "tables": 21,
+      "code": 1,
+      "tokens": 0,
+      "flows": 4,
+      "stats": 8,
+      "bars": 2,
+      "meters": 0,
+      "agendas": 3,
+      "quizzes": 5,
+      "checklists": 4,
+      "prompts": 1,
+      "chats": 2,
+      "tools": 0,
+      "traces": 0,
+      "ladders": 0,
+      "figures": 0,
+      "matrices": 0,
+      "timers": 6,
+      "columns": 41,
+      "images": 0,
+      "drawings": 0,
+      "fragments": 0
+    },
+    "minutes": 420
+  },
+  "decks": [
+    {
+      "deck": "day1",
+      "kind": "day",
+      "label": "اليوم 1",
+      "title": "الحدود والإجراءات",
+      "slides": 37,
+      "words": 2872,
+      "notes": 35,
+      "notes_ratio": 0.95,
+      "activities": 2,
+      "styles": 0,
+      "slide_minutes": null,
+      "components": {
+        "cards": 24,
+        "pills": 0,
+        "callouts": 36,
+        "tables": 11,
+        "code": 0,
+        "tokens": 0,
+        "flows": 2,
+        "stats": 6,
+        "bars": 0,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 2,
+        "checklists": 2,
+        "prompts": 1,
+        "chats": 1,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 1,
+        "columns": 23,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 210,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "حدود السلامة والبيانات: أين يقف المساعد",
+          "slides": 14,
+          "words": 1113,
+          "notes": 13,
+          "notes_ratio": 0.93,
+          "activities": 1,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 9,
+            "pills": 0,
+            "callouts": 17,
+            "tables": 4,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 0,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 10,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 105,
+          "lab_minutes": 45
+        },
+        {
+          "n": 2,
+          "label": "الجلسة 2",
+          "title": "الأدلة التشغيلية والإجراءات: الخطوة والقيمة والوحدة",
+          "slides": 17,
+          "words": 1329,
+          "notes": 16,
+          "notes_ratio": 0.94,
+          "activities": 1,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 12,
+            "pills": 0,
+            "callouts": 14,
+            "tables": 5,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 3,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 1,
+            "chats": 1,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 1,
+            "columns": 9,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 105,
+          "lab_minutes": 55
+        }
+      ]
+    },
+    {
+      "deck": "day2",
+      "kind": "day",
+      "label": "اليوم 2",
+      "title": "السجلات والصور",
+      "slides": 26,
+      "words": 1911,
+      "notes": 24,
+      "notes_ratio": 0.92,
+      "activities": 2,
+      "styles": 0,
+      "slide_minutes": null,
+      "components": {
+        "cards": 14,
+        "pills": 0,
+        "callouts": 19,
+        "tables": 6,
+        "code": 1,
+        "tokens": 0,
+        "flows": 2,
+        "stats": 2,
+        "bars": 0,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 2,
+        "checklists": 2,
+        "prompts": 0,
+        "chats": 1,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 13,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 210,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "سجلات الصيانة: ترميز بالمساعد وأعداد من الكود",
+          "slides": 11,
+          "words": 838,
+          "notes": 10,
+          "notes_ratio": 0.91,
+          "activities": 1,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 6,
+            "pills": 0,
+            "callouts": 11,
+            "tables": 2,
+            "code": 1,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 0,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 1,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 6,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 105,
+          "lab_minutes": 55
+        },
+        {
+          "n": 2,
+          "label": "الجلسة 2",
+          "title": "الصور والرسومات والملاحظات الصوتية",
+          "slides": 13,
+          "words": 962,
+          "notes": 12,
+          "notes_ratio": 0.92,
+          "activities": 1,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 8,
+            "pills": 0,
+            "callouts": 8,
+            "tables": 4,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 2,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 7,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 105,
+          "lab_minutes": 55
+        }
+      ]
+    },
+    {
+      "deck": "capstone",
+      "kind": "capstone",
+      "label": "المشروع الختامي",
+      "title": "بطاقة إعادة التصميم والمراجعة المباشرة",
+      "slides": 15,
+      "words": 883,
+      "notes": 15,
+      "notes_ratio": 1,
+      "activities": 1,
+      "styles": 9,
+      "slide_minutes": null,
+      "components": {
+        "cards": 5,
+        "pills": 0,
+        "callouts": 7,
+        "tables": 4,
+        "code": 0,
+        "tokens": 0,
+        "flows": 0,
+        "stats": 0,
+        "bars": 2,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 1,
+        "checklists": 0,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 5,
+        "columns": 5,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": null,
+      "sessions": []
+    }
+  ],
+  "coverage": [
+    {
+      "id": "LO1",
+      "text": "يحدد المهام الميدانية التي يجب ألا توجّه فيها مخرجات الذكاء الاصطناعي أي إجراء، والتحقق الذي تحتاج إليه كل منها، استنادًا إلى اثني عشر استخدامًا، من حديث السلامة قبل العمل إلى تغيير نقطة ضبط",
+      "level": "Awareness",
+      "slides": [
+        "day1#why-this-course",
+        "day1#output-fate",
+        "day1#never-list",
+        "day1#five-checks",
+        "day1#permit-to-work",
+        "day1#management-of-change",
+        "day1#competent-person",
+        "day1#data-levels",
+        "day1#what-a-photo-reveals",
+        "day1#tool-tiers",
+        "day1#two-questions",
+        "day1#ai-off-lab",
+        "day1#check-alarm-bypass",
+        "day2#drawings",
+        "capstone#redesign-card"
+      ],
+      "activities": [
+        "day1#check-alarm-bypass-q1"
+      ],
+      "sessions": [
+        "day1/1"
+      ],
+      "labs": [
+        "1.1"
+      ],
+      "questions": [
+        "q-tiers-01",
+        "q-tiers-02",
+        "q-tiers-03",
+        "q-data-04",
+        "q-data-05"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO2",
+      "text": "يستخدم مساعدًا مستندًا إلى المصادر لتحديث إجراء، ويتحقق من كل خطوة وقيمة ووحدة مقارنة بالمراجعة السارية، استنادًا إلى نموذج تغيير ودليل تشغيلي منقّح",
+      "level": "Applied",
+      "slides": [
+        "day1#management-of-change",
+        "day1#grounded-assistant",
+        "day1#citation-is-not-check",
+        "day1#revision-control",
+        "day1#draft-request",
+        "day1#step-value-unit",
+        "day1#units-matter",
+        "day1#tolerances",
+        "day1#bilingual-terms",
+        "day1#what-is-missing",
+        "day1#redline-format",
+        "day1#tutor-mode",
+        "day1#check-superseded-value",
+        "day1#supervised-check",
+        "capstone#live-review-format"
+      ],
+      "activities": [
+        "day1#check-superseded-value-q1"
+      ],
+      "sessions": [
+        "day1/2"
+      ],
+      "labs": [
+        "1.2"
+      ],
+      "questions": [
+        "q-redline-06",
+        "q-redline-07",
+        "q-redline-08",
+        "q-redline-09",
+        "q-redline-10"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO3",
+      "text": "يحلل سجلات الصيانة النصية الحرة بترميز مدعوم بالذكاء الاصطناعي وأعداد محسوبة للأعطال المتكررة، على سجلات اصطناعية لمدة عامين",
+      "level": "Applied",
+      "slides": [
+        "day2#logs-three-registers",
+        "day2#codebook",
+        "day2#coding-traps",
+        "day2#fixed-sample",
+        "day2#chat-counts",
+        "day2#counts-from-rows",
+        "day2#recurring",
+        "day2#confidence-note",
+        "day2#check-usable-count",
+        "capstone#live-review-format"
+      ],
+      "activities": [
+        "day2#check-usable-count-q1"
+      ],
+      "sessions": [
+        "day2/1"
+      ],
+      "labs": [
+        "2.1"
+      ],
+      "questions": [
+        "q-logs-11",
+        "q-logs-12",
+        "q-logs-13",
+        "q-logs-14",
+        "q-logs-15"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO4",
+      "text": "يختبر قراءة مساعد متعدد الوسائط لصور الفحص والمقاييس والرسومات مقارنة بقيم معروفة، على ثلاثين صورة موسومة ومخطط واحد",
+      "level": "Applied",
+      "slides": [
+        "day1#why-this-course",
+        "day2#reading-a-gauge",
+        "day2#misread-sources",
+        "day2#known-values",
+        "day2#misread-table",
+        "day2#reading-rule",
+        "day2#drawings",
+        "day2#check-reading-rule"
+      ],
+      "activities": [
+        "day2#check-reading-rule-q1"
+      ],
+      "sessions": [
+        "day2/2"
+      ],
+      "labs": [
+        "2.2"
+      ],
+      "questions": [
+        "q-images-16",
+        "q-images-17",
+        "q-images-18",
+        "q-images-19",
+        "q-images-20"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO5",
+      "text": "يعيد تصميم مهمة توثيق ميدانية واحدة، مثل تحويل الملاحظات الصوتية إلى تقرير، ويقيسها في تشغيلين، استنادًا إلى خط الأساس المعدّ في العمل التحضيري",
+      "level": "Performance",
+      "slides": [
+        "day1#competent-person",
+        "day2#speech-errors",
+        "day2#field-by-field",
+        "capstone#the-brief",
+        "capstone#assessment-parts",
+        "capstone#rubric",
+        "capstone#what-you-measure",
+        "capstone#check-what-the-runs-show",
+        "capstone#run-1",
+        "capstone#run-2",
+        "capstone#redesign-card",
+        "capstone#live-review-format",
+        "capstone#what-next"
+      ],
+      "activities": [
+        "capstone#check-what-the-runs-show-q1"
+      ],
+      "sessions": [
+        "day2/2"
+      ],
+      "labs": [
+        "2.2"
+      ],
+      "questions": [
+        "q-voice-21",
+        "q-voice-22",
+        "q-voice-23",
+        "q-voice-24",
+        "q-voice-25"
+      ],
+      "covered": true
+    }
+  ]
+}

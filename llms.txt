@@ -1,0 +1,31 @@
+# الذكاء الاصطناعي للمهندسين والعمليات الميدانية
+
+> تستعين بالمساعد في الإجراءات والسجلات وصور الفحص والملاحظات الصوتية، وتتحقق من كل قيمة ووحدة وخطوة قبل أن تصل إلى المعدات. مقرر من أكاديمية سدايا، الرمز USE-PRO-211، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/use-pro-211/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/use-pro-211/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/use-pro-211/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 14,224 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/use-pro-211/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: الحدود والإجراءات](https://sdaiaacademy.github.io/use-pro-211/slides/day1.md): تصنّف اثني عشر استخدامًا ميدانيًّا بحسب مستوى المخاطر دون أي مساعد، ثم تؤشّر التعديلات على مسودة إجراء كتبها المساعد وتسمّي المخاطر التي أغفلها؛ الجلسات: حدود السلامة والبيانات: أين يقف المساعد، الأدلة التشغيلية والإجراءات: الخطوة والقيمة والوحدة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-211/slides/day1.html؛ نحو 6,813 من الوحدات النصية
+- [اليوم 2: السجلات والصور](https://sdaiaacademy.github.io/use-pro-211/slides/day2.md): تحسب الأعطال المتكررة في سجلات عامين بترميز يتحقق منه البشر وأعداد يحسبها الكود، ثم تقيس القراءات الخاطئة في ثلاثين صورة ومخطط قبل أن تكتب قاعدة استخدام؛ الجلسات: سجلات الصيانة: ترميز بالمساعد وأعداد من الكود، الصور والرسومات والملاحظات الصوتية؛ الصفحة: https://sdaiaacademy.github.io/use-pro-211/slides/day2.html؛ نحو 4,483 من الوحدات النصية
+- [المشروع الختامي: بطاقة إعادة التصميم والمراجعة المباشرة](https://sdaiaacademy.github.io/use-pro-211/slides/capstone.md): تشغيلان مقيسان لمهمة توثيق ميدانية مقابل خط الأساس، ثم سبع دقائق لكل مشارك يتتبع فيها خطوة إجراء وعدد أعطال إلى مصدرهما؛ الصفحة: https://sdaiaacademy.github.io/use-pro-211/slides/capstone.html؛ نحو 2,319 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: مستويات المخاطر لاثني عشر استخدامًا](https://sdaiaacademy.github.io/use-pro-211/labs/D1_1_risk_tiers.md): اليوم 1، الجلسة 1، 45 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-211/labs/D1_1_risk_tiers.html
+- [المختبر 1.2: تأشير التعديلات على إجراء المضخة P-101B](https://sdaiaacademy.github.io/use-pro-211/labs/D1_2_redline_procedure.md): اليوم 1، الجلسة 2، 55 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-211/labs/D1_2_redline_procedure.html
+- [المختبر 2.1: جدول الأعطال المتكررة من سجلات عامين](https://sdaiaacademy.github.io/use-pro-211/labs/D2_1_count_faults.md): اليوم 2، الجلسة 1، 55 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-211/labs/D2_1_count_faults.html
+- [المختبر 2.2: جدول القراءات الخاطئة وقاعدة القراءة](https://sdaiaacademy.github.io/use-pro-211/labs/D2_2_image_misreads.md): اليوم 2، الجلسة 2، 55 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-211/labs/D2_2_image_misreads.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/use-pro-211/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 14,224 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/use-pro-211/context/day1.md): اليوم 1، نحو 6,813 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/use-pro-211/context/day2.md): اليوم 2، نحو 4,483 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/use-pro-211/context/capstone.md): المشروع الختامي، نحو 2,319 من الوحدات النصية

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.1 · جدول الأعطال المتكررة من سجلات عامين · الذكاء الاصطناعي للمهندسين والعمليات الميدانية</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_1_count_faults.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.1</span>
+<h1>جدول الأعطال المتكررة من سجلات عامين</h1>
+<p>تتحقق من ترميز «مِكشاف» لسجلات الصيانة على عينة من 50 مدخلًا، وتحسب الأعداد بالكود، وتخرج بجدول أعطال متكررة يُتتبَّع كل رقم فيه إلى صفوفه</p>
+<div class="meta"><span>55 دقيقة</span><span>اليوم 2</span><span>الجلسة 1: سجلات الصيانة: ترميز بالمساعد وأعداد من الكود</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.1">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>عينة من 50 مدخلًا رمّزتها بيدك وقارنتها بترميز «مِكشاف»، مع أنماط الخطأ التي ظهرت فيها.</li>
+    <li>جدول أعطال متكررة محسوب بالصيغ أو بالسكربت، كل رقم فيه يُتتبَّع إلى أوامر العمل التي وراءه. هذا دليل الناتج الثالث.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/logs/maintenance_log.csv" download><b>maintenance_log.csv</b><span>سجل الصيانة لعامين: 253 أمر عمل بنص حر، بالعربية والإنجليزية ولغة الورشة.</span></a>
+  <a href="files/logs/codebook.html" target="_blank"><b>codebook.html</b><span>دليل الترميز: تسعة رموز، وقواعدها، وتعريف العطل المتكرر.</span></a>
+  <a href="files/runs/mikshaf_coding.csv" download><b>mikshaf_coding.csv</b><span>جلسة مسجلة: السجل نفسه وفي آخره عمود <span class="en">mikshaf_code</span>، ترميز «مِكشاف».</span></a>
+  <a href="files/start/sample_50.csv" download><b>sample_50.csv</b><span>العينة الثابتة: 50 مدخلًا سُحبت بمولّد عشوائي ببذرة ثابتة، وعمودان فارغان لك.</span></a>
+  <a href="files/runs/mikshaf_counts_chat.html" target="_blank"><b>mikshaf_counts_chat.html</b><span>جلسة مسجلة: سُئل المساعد عن الأعداد في المحادثة مرتين.</span></a>
+  <a href="count_faults.py" download><b>count_faults.py</b><span>سكربت العدّ: ملف واحد بلا اعتماديات، يقرأ ملفًا ويطبع، ولا يتصل بأي نموذج.</span></a>
+  <a href="files/start/fault_table.csv" download><b>fault_table.csv</b><span>جدول الأعطال المتكررة: الأعمدة جاهزة.</span></a>
+</div>
+<div class="callout note"><b>استخدام الذكاء الاصطناعي في هذا المختبر: كامل.</b> الترميز من المساعد مقبول بعد التحقق منه على العينة. أما الأعداد فلا تُسأل للمساعد: تحسبها الصيغ أو السكربت من الصفوف. سجلات الصيانة مقيدة: أعلى أداة لها المساعد المعتمد.</div>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · قرار التعامل، ثم السجل ودليل الترميز <span class="min">5 دقائق</span></h3>
+  <p>ما مستوى سجل الصيانة؟ وأي أداة يدخلها؟ ثم اقرأ دليل الترميز كله، وخاصة قواعده الأربع: الرمز للعطل الذي وقع لا للكلمة التي وردت، والفرق بين <span class="en">ELEC</span> و<span class="en">OVH</span>، ولغة الورشة، وتعريف العطل المتكرر.</p>
+</div>
+
+<div class="step">
+  <h3>2 · رمّز عشرة مدخلات بيدك <span class="min">8 دقائق</span></h3>
+  <p>افتح <span class="en">sample_50.csv</span> في برنامج الجداول، وأخفِ عمود <span class="en">mikshaf_code</span> قبل أن تقرأ. رمّز المدخلات العشرة الأولى في عمود <span class="en">my_code</span> بدليل الترميز وحده. الهدف أن يكون حكمك قبل أن ترى حكم المساعد.</p>
+</div>
+
+<div class="step">
+  <h3>3 · تحقق من ترميز المساعد على العينة <span class="min">15 دقيقة</span></h3>
+  <p>أكمل الخمسين، ثم أظهر عمود <span class="en">mikshaf_code</span>، واكتب في عمود <span class="en">agree</span> «نعم» أو «لا». كم اتفاقًا من خمسين؟ ثم صنّف كل خلاف: أي رمز كتبه المساعد، وأي رمز الصحيح، ولماذا. كل نمط تجده في العينة له أخوات في بقية السجل.</p>
+  <div class="prompt" data-tool="مساعد معتمد">رمّز كل أمر عمل في الملف المرفق برمز واحد من دليل الترميز المرفق. الرمز للعطل الذي وقع، لا للكلمة التي وردت. اكتب بجانب كل رمز الكلمات التي بنيت عليها حكمك. ولا تحسب أي عدد.</div>
+  <p>من عنده مساعد معتمد يجرب هذا الطلب على العينة ويقارن ترميزه بالترميز المسجل. ومن ليس عنده يعمل بالترميز المسجل.</p>
+</div>
+
+<div class="step">
+  <h3>4 · احسب الأعداد من الصفوف <span class="min">12 دقيقة</span></h3>
+  <p>احسب أولًا من ترميز المساعد كما هو، ثم صحّحه بالأنماط التي وجدتها في الخطوة 3 وأعد الحساب. طريقان، والنتيجة واحدة:</p>
+  <ul>
+    <li><b>بالجداول:</b> أضف إلى <span class="en">mikshaf_coding.csv</span> عمود <span class="en">my_code</span> ينسخ رمز المساعد. صفِّ النص بكلمات كل نمط (مثل «لا يوجد» و<span class="en">no</span>، و«بيرنق» و«رمان بلي»، و«الحماية الحرارية» و<span class="en">thermal</span>) وصحّح الرمز صفًّا صفًّا بعد أن تقرأه. ثم <span class="en">COUNTIFS</span> أو جدول محوري على المعدة والرمز.</li>
+    <li><b>بالسكربت:</b> ضع <span class="en">count_faults.py</span> والملف في مجلد واحد. الأمر الأول يطبع الجدول، والثاني يطبع الصفوف وراء رقم واحد لتقرأها، والثالث يعدّ عمود تصحيحك.</li>
+  </ul>
+  <pre class="code" data-file="terminal"><code class="language-bash">uv run count_faults.py --file mikshaf_coding.csv
+uv run count_faults.py --file mikshaf_coding.csv --asset P-101B --code SEAL --rows
+uv run count_faults.py --file my_coding.csv --column my_code</code></pre>
+  <p>العطل المصنف خطأً في رمز آخر لا يظهر في صفوف رمزه. إن أظهرت العينة عطلًا رُمّز <span class="en">OTH</span> فاطلب صفوف <span class="en">OTH</span> للمعدة نفسها: <span class="en">--code OTH --rows</span>.</p>
+</div>
+
+<div class="step">
+  <h3>5 · قارن بما قاله المساعد في المحادثة <span class="min">7 دقائق</span></h3>
+  <p>افتح جلسة الأعداد المسجلة. للأعطال الأربعة فيها: عددك، وجواب الجلسة الأولى، وجواب الثانية. أي الجوابين صحيح؟ وهل يمكن أن تعرف ذلك دون أن تحسب بنفسك؟</p>
+</div>
+
+<div class="step">
+  <h3>6 · جدول الأعطال المتكررة وملاحظة الثقة <span class="min">8 دقائق</span></h3>
+  <p>املأ <span class="en">fault_table.csv</span>: لكل معدة ورمز عددها، وأكبر عدد في أي 90 يومًا، وهل هو متكرر، ومن قرأ الصفوف. ابدأ بالأربعة التي في جلسة المحادثة، ثم أضف كل ما يسميه السكربت متكررًا. واكتب تحت الجدول ملاحظة ثقة من ثلاثة أسطر: نسبة الاتفاق في العينة، والأنماط التي صحّحتها، وما لم تفحصه.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي: قاعدة واحدة في دليل الترميز</h3>
+  <p>اكتب قاعدة واحدة تُضاف إلى دليل الترميز وتمنع أكبر نمط خطأ وجدته، مع مثالين من السجل. أعطها للمساعد مع الدليل، أو طبّقها بيدك على الصفوف، وأعد الحساب: كم رقمًا في جدولك تغيّر؟</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم اتفاقًا من خمسين في العينة؟ وكم نمطًا من الخطأ وجدت؟</li>
+  <li>عدد تسرب مانع التسرب في <span class="en">P-101B</span> من ترميز المساعد، وبعد تصحيحك: ما الفرق، ومن أي نمط جاء؟</li>
+  <li>أي عطل متكرر لا يظهر حين تطلب صفوف رمزه، ويظهر حين تطلب صفوف <span class="en">OTH</span>؟</li>
+  <li>جوابا المحادثة عن العطل نفسه: هل اتفقا؟ وهل كان أحدهما عددك؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرب</summary>
+  <ul>
+    <li>الحل المرجعي: <code>labs/solutions/D2_1_count_faults.md</code>، والجدول في <code>labs/solutions/reference/D2_1_fault_table.csv</code> (عمود <code>count</code> هو ما يطابقه جدول المشارك). التحقق بالكود: <code>node labs/solutions/check.mjs 2.1</code>.</li>
+    <li>السجل 253 أمر عمل، ترميز المساعد أخطأ في 31 منها (12%). أربعة أنماط: فحص دوري فيه «لا يوجد تسرب» رُمّز <code>SEAL</code> (12)، و«لا يوجد اهتزاز» رُمّز <code>BRG</code> (10)، ومحامل بلغة الورشة رُمّزت <code>OTH</code> (5)، وفصل الحماية الحرارية رُمّز <code>OVH</code> (4).</li>
+    <li>العينة: 45 اتفاقًا من 50، والخلافات الخمسة <code>WO-0004</code> و<code>WO-0024</code> و<code>WO-0212</code> و<code>WO-0231</code> و<code>WO-0235</code>، والأنماط الأربعة كلها فيها. 90% في العينة لا تعني أن الأعداد صحيحة بنسبة 90%: الأخطاء تتجمع في معدات بعينها.</li>
+    <li>الأعطال الأربعة: <code>P-101B SEAL</code> 9 (ترميز المساعد 15: ستة فحوص دورية)، و<code>P-101C BLK</code> 14 (مطابق)، و<code>P-101A BRG</code> 7 (ترميز المساعد 4: أربعة في <code>OTH</code> وفحص دوري واحد في <code>BRG</code>)، و<code>LT-101 INST</code> 8، وليس متكررًا: أكبر عدد في 90 يومًا اثنان.</li>
+    <li>المحادثة: الجلسة الأولى 12 و11 و3 و9، والثانية 8 و15 و4 و6. لا جواب منهما يطابق العدد الصحيح في الأربعة، والمساعد ختم كل جلسة بأن الأرقام دقيقة.</li>
+    <li>من ليس على جهازه <code>uv</code> يكمل بالجداول. ومن تأخر في الخطوة 3 يأخذ الخلافات الخمسة من المدرب ويكمل من الخطوة 4.</li>
+    <li>الترميز والمحادثة نصوص مسجلة كتبها مؤلف المقرر: لم يُشغَّل المختبر على نموذج. السكربت والعدّ يُشغَّلان فعلًا.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D1_2_redline_procedure.html" rel="prev">→ المختبر السابق</a><a href="D2_2_image_misreads.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار الطلاقة في البيانات والذكاء الاصطناعي · الذكاء الاصطناعي للمهندسين والعمليات الميدانية<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع 1d799bc</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T20:09:33Z","version":"2027.1.0","commit":"1d799bc"},"course":{"id":"use-pro-211","code":"USE-PRO-211","title":"الذكاء الاصطناعي للمهندسين والعمليات الميدانية","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-pro-211/","repo":"SDAIAAcademy/use-pro-211","home":"../index.html"},"lab":{"id":"2.1","title":"جدول الأعطال المتكررة من سجلات عامين","summary":"تتحقق من ترميز «مِكشاف» لسجلات الصيانة على عينة من 50 مدخلًا، وتحسب الأعداد بالكود، وتخرج بجدول أعطال متكررة يُتتبَّع كل رقم فيه إلى صفوفه","minutes":55,"day":2,"unit":"اليوم 2","session":1,"deck":"../slides/day2.html#lab-2-1","prev":"D1_2_redline_procedure.html","next":"D2_2_image_misreads.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>
